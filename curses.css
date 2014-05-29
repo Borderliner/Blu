@@ -1,0 +1,125 @@
+body {
+    background: #00F;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div#mainheader {
+    color:#54FEFE;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border-bottom:1px solid #54FEFE;
+}
+
+div.menudialog {
+    position:relative;
+    width:500px;
+    margin: auto;
+    background: #CCC;
+    padding: 10px 4px 8px 4px;
+    box-shadow: 16px 16px 0px 0px #000;
+}
+
+div.menudialog div.menuouter div.menuheader {
+    position:relative;
+    top:-25px;
+    height:0;
+    text-align:center;
+}
+
+div.menudialog div.menuouter div.menuheader span {
+    padding:0 5px 0 5px;
+    color:#725DFC;
+    background-color: #CCC;
+}
+
+div.menudialog div.menuouter div.menutoptext {
+    margin-top:-7px;
+    margin-bottom:4px;
+}
+
+div.menudialog div.menuouter {
+    position:relative;
+    padding:15px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #000;
+}
+
+div.menudialog div.menuouter div.menutopborder {
+    position:absolute;
+    border:none;
+    width:5px;
+    height:1px;
+    top:-1px;
+    right:-1px;
+    background-color:#000;
+}
+div.menudialog div.menuouter div.menubottomborder {
+    position:absolute;
+    border:none;
+    width:5px;
+    height:1px;
+    bottom:-1px;
+    left:-1px;
+    background-color:#FFF;
+}
+
+div.menudialog div.menuouter div.menuoptions {
+    position:relative;
+    padding:0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #FFF;
+    border-left: 1px solid #000;
+    border-right: 1px solid #FFF;
+}
+
+div.menudialog div.menuouter div.menuoptions div.menutopborder {background-color:#FFF;}
+
+div.menudialog div.menuouter div.menuoptions div.menubottomborder {background-color:#000;}
+
+div.menudialog div.menuouter div.menuoptions ul {
+    list-style:none;
+    padding-left:30px;
+    padding-right:4px;
+}
+
+div.menudialog div.menuouter div.menuoptions ul li a {
+    display:block;
+    width:100%;
+    height:1.2em;
+    overflow:hidden;
+    text-decoration:none;
+    color:#000;
+}
+div.menudialog div.menuouter div.menuoptions ul li a:hover, div.menudialog div.menuouter div.menubottomtext a:hover, div.menudialog div.menuouter div.menuoptions ul li a:focus, div.menudialog div.menuouter div.menubottomtext a:focus {
+    color:#FFF;
+    background-color:#00F;
+}
+
+div.menudialog div.menuouter div.menuoptions ul li a span, div.menudialog div.menuouter div.menubottomtext a span {color:#725DFC;}
+div.menudialog div.menuouter div.menuoptions ul li a:hover span, div.menudialog div.menuouter div.menubottomtext a:hover span, div.menudialog div.menuouter div.menuoptions ul li a:focus span, div.menudialog div.menuouter div.menubottomtext a:focus span {color:#F7FB54;}
+
+div.menudialog div.menuouter div.menubottomtext {
+    position:relative;
+    width:100%;
+    margin:15px 0 -7px -15px;
+    padding-top:10px;
+    padding-right:15px;
+    padding-left:15px;
+    border-top:1px solid #FFF;
+    text-align:center;
+}
+
+div.menudialog div.menuouter div.menubottomtext a {
+    display:inline-block;
+    margin-left:10px;
+    margin-right:10px;
+    text-decoration:none;
+    color:#696969;
+}
+
+div.menudialog div.menuouter div.menubottomtext div.menutopborder {background-color:#000;}
+
+div.menudialog a span.menubrackets {color:#000 !important;}
+div.menudialog a:hover span.menubrackets, div.menudialog a:focus span.menubrackets {color:inherit !important;}
