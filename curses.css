@@ -152,10 +152,12 @@ div.menudialog div.menuouter div.menubuttons a:after {
     color: #000;
 }
 
-div.menudialog a:before:hover,
-div.menudialog a:after:hover,
-div.menudialog a:before:focus,
-div.menudialog a:after:focus { color: #fff; }
+div.menudialog div.menuouter div.menubuttons a:hover:before,
+div.menudialog div.menuouter div.menubuttons a:hover:after,
+div.menudialog div.menuouter div.menubuttons a:focus:before,
+div.menudialog div.menuouter div.menubuttons a:focus:after {
+    color: inherit;
+}
 
 div.menudialog div.menuouter div.menubuttons a:before { content: "\003c\0000a0"; }
 div.menudialog div.menuouter div.menubuttons a:after { content: "\0000a0\003e"; }
