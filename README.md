@@ -4,8 +4,6 @@ This is a simple CSS template that can be used to theme a webpage with a style s
 
 [Demo](http://prurigro.github.io/css-cursesmenu/)
 
-![CSS Curses Menu Screenshot](http://i.imgur.com/ZfilLXM.png)
-
 ## Credits ##
 
 Written by Kevin MacMartin: [GitHub Projects](https://github.com/prurigro?tab=repositories) | [Arch Linux AUR Packages](https://aur.archlinux.org/packages/?SeB=m&K=prurigro)
