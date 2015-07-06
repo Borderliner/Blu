@@ -2,6 +2,8 @@
 
 This is a simple CSS template that can be used to theme a webpage with a style similar to the classic ncurses Linux menuconfig.
 
+[Demo](http://prurigro.github.io/css-cursesmenu/)
+
 ![CSS Curses Menu Screenshot](http://i.imgur.com/ZfilLXM.png)
 
 ## Credits ##
