@@ -1,125 +1,164 @@
 body {
-    background: #00F;
+    background: #00f;
     font-family: 'Courier New', Courier, monospace;
 }
 
-div#mainheader {
-    color:#54FEFE;
-    padding-bottom:10px;
-    margin-bottom:10px;
-    border-bottom:1px solid #54FEFE;
+div.mainheader {
+    color: #54fefe;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #54fefe;
+    text-transform: uppercase;
 }
 
 div.menudialog {
-    position:relative;
-    width:500px;
+    position: relative;
+    width: 500px;
     margin: auto;
-    background: #CCC;
+    background: #ccc;
     padding: 10px 4px 8px 4px;
     box-shadow: 16px 16px 0px 0px #000;
 }
 
 div.menudialog div.menuouter div.menuheader {
-    position:relative;
-    top:-25px;
-    height:0;
-    text-align:center;
+    position: relative;
+    top: -25px;
+    height: 0;
+    text-align: center;
 }
 
 div.menudialog div.menuouter div.menuheader span {
-    padding:0 5px 0 5px;
-    color:#725DFC;
-    background-color: #CCC;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: #ccc;
+    color: #725dfc;
+    text-transform: uppercase;
 }
 
 div.menudialog div.menuouter div.menutoptext {
-    margin-top:-7px;
-    margin-bottom:4px;
+    margin-top: -7px;
+    margin-bottom: 4px;
 }
 
 div.menudialog div.menuouter {
-    position:relative;
-    padding:15px;
-    border-top: 1px solid #FFF;
+    position: relative;
+    padding: 15px;
+    border-top: 1px solid #fff;
     border-bottom: 1px solid #000;
-    border-left: 1px solid #FFF;
+    border-left: 1px solid #fff;
     border-right: 1px solid #000;
 }
 
-div.menudialog div.menuouter div.menutopborder {
-    position:absolute;
-    border:none;
-    width:5px;
-    height:1px;
-    top:-1px;
-    right:-1px;
-    background-color:#000;
-}
+div.menudialog div.menuouter div.menutopborder,
 div.menudialog div.menuouter div.menubottomborder {
-    position:absolute;
-    border:none;
-    width:5px;
-    height:1px;
-    bottom:-1px;
-    left:-1px;
-    background-color:#FFF;
+    position: absolute;
+    border: none;
+    width: 5px;
+    height: 1px;
+}
+
+div.menudialog div.menuouter div.menutopborder {
+    top: -1px;
+    right: -1px;
+    background-color: #000;
+}
+
+div.menudialog div.menuouter div.menubottomborder {
+    bottom: -1px;
+    left: -1px;
+    background-color: #fff;
 }
 
 div.menudialog div.menuouter div.menuoptions {
-    position:relative;
-    padding:0;
+    position: relative;
+    padding: 0;
     border-top: 1px solid #000;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #fff;
     border-left: 1px solid #000;
-    border-right: 1px solid #FFF;
+    border-right: 1px solid #fff;
 }
 
-div.menudialog div.menuouter div.menuoptions div.menutopborder {background-color:#FFF;}
-
-div.menudialog div.menuouter div.menuoptions div.menubottomborder {background-color:#000;}
+div.menudialog div.menuouter div.menuoptions div.menutopborder { background-color: #fff; }
+div.menudialog div.menuouter div.menuoptions div.menubottomborder { background-color: #000; }
 
 div.menudialog div.menuouter div.menuoptions ul {
-    list-style:none;
-    padding-left:30px;
-    padding-right:4px;
+    list-style: none;
+    padding-left: 30px;
+    padding-right: 4px;
 }
 
 div.menudialog div.menuouter div.menuoptions ul li a {
-    display:block;
-    width:100%;
-    height:1.2em;
-    overflow:hidden;
-    text-decoration:none;
-    color:#000;
-}
-div.menudialog div.menuouter div.menuoptions ul li a:hover, div.menudialog div.menuouter div.menubottomtext a:hover, div.menudialog div.menuouter div.menuoptions ul li a:focus, div.menudialog div.menuouter div.menubottomtext a:focus {
-    color:#FFF;
-    background-color:#00F;
+    display: block;
+    width: 100%;
+    height: 1.2em;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
 }
 
-div.menudialog div.menuouter div.menuoptions ul li a span, div.menudialog div.menuouter div.menubottomtext a span {color:#725DFC;}
-div.menudialog div.menuouter div.menuoptions ul li a:hover span, div.menudialog div.menuouter div.menubottomtext a:hover span, div.menudialog div.menuouter div.menuoptions ul li a:focus span, div.menudialog div.menuouter div.menubottomtext a:focus span {color:#F7FB54;}
-
-div.menudialog div.menuouter div.menubottomtext {
-    position:relative;
-    width:100%;
-    margin:15px 0 -7px -15px;
-    padding-top:10px;
-    padding-right:15px;
-    padding-left:15px;
-    border-top:1px solid #FFF;
-    text-align:center;
+div.menudialog div.menuouter div.menuoptions ul li a:hover,
+div.menudialog div.menuouter div.menubuttons a:hover,
+div.menudialog div.menuouter div.menuoptions ul li a:focus,
+div.menudialog div.menuouter div.menubuttons a:focus {
+    color: #fff;
+    background-color: #00f;
 }
 
-div.menudialog div.menuouter div.menubottomtext a {
-    display:inline-block;
-    margin-left:10px;
-    margin-right:10px;
-    text-decoration:none;
-    color:#696969;
+div.menudialog div.menuouter div.menuoptions ul li a:before {
+    content: "[\0000a0]\0000a0";
+    display: inline;
 }
 
-div.menudialog div.menuouter div.menubottomtext div.menutopborder {background-color:#000;}
+div.menudialog div.menuouter div.menuoptions ul li a.checked:before {
+    content: "[x]\0000a0";
+    display: inline;
+}
 
-div.menudialog a span.menubrackets {color:#000 !important;}
-div.menudialog a:hover span.menubrackets, div.menudialog a:focus span.menubrackets {color:inherit !important;}
+div.menudialog div.menuouter div.menuoptions ul li a:after {
+    content: "\0000a0--->";
+    display: inline;
+}
+
+div.menudialog div.menuouter div.menuoptions ul li a span,
+div.menudialog div.menuouter div.menubuttons a span { color: #725dfc; }
+
+div.menudialog div.menuouter div.menuoptions ul li a:hover span,
+div.menudialog div.menuouter div.menubuttons a:hover span,
+div.menudialog div.menuouter div.menuoptions ul li a:focus span,
+div.menudialog div.menuouter div.menubuttons a:focus span { color: #f7fb54; }
+
+div.menudialog div.menuouter div.menubuttons {
+    position: relative;
+    width: 100%;
+    margin: 15px 0 -7px -15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 1px solid #fff;
+    text-align: center;
+}
+
+div.menudialog div.menuouter div.menubuttons a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #696969;
+}
+
+div.menudialog div.menuouter div.menubuttons a:before,
+div.menudialog div.menuouter div.menubuttons a:after {
+    display: inline;
+    color: #000;
+}
+
+div.menudialog a:before:hover,
+div.menudialog a:after:hover,
+div.menudialog a:before:focus,
+div.menudialog a:after:focus { color: #fff; }
+
+div.menudialog div.menuouter div.menubuttons a:before { content: "\003c\0000a0"; }
+div.menudialog div.menuouter div.menubuttons a:after { content: "\0000a0\003e"; }
+
+div.menudialog div.menuouter div.menubuttons div.menutopborder { background-color: #000; }
+
