@@ -1,12 +1,13 @@
-# CSS Curses Menu  #
+# Blu ncurses CSS  #
 
-This is a simple CSS template that can be used to theme a webpage with a style similar to the classic ncurses Linux menuconfig.
+Blu is a CSS library to build web pages that give the look-and-feel similar to [ncurses](https://en.wikipedia.org/wiki/Ncurses).
 
 [Demo](http://prurigro.github.io/css-cursesmenu/)
 
 ## Credits ##
 
-Written by Kevin MacMartin: [GitHub Projects](https://github.com/prurigro?tab=repositories) | [Arch Linux AUR Packages](https://aur.archlinux.org/packages/?SeB=m&K=prurigro)
+Developed by Mohammad reza Hajianpour
+Initiated by Kevin MacMartin
 
 ## License ##
 
