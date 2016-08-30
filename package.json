@@ -25,6 +25,8 @@
   "homepage": "http://blu.borderliner.ir",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7"
   }
 }
