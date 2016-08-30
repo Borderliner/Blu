@@ -3,31 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Kevin MacMartin">
-        <link rel="stylesheet" type="text/css" href="curses.css" />
+        <link rel="stylesheet" type="text/css" href="dist/blu.min.css" />
         <title>CURSES MENU</title>
     </head>
     <body>
-        <div class="mainheader">Curses Menu</div>
-        <div class="menudialog">
-            <div class="menuouter">
-                <div class="menuheader"><span>Main Menu</span></div>
-                <div class="menutopborder"></div>
-                <div class="menubottomborder"></div>
-                <div class="menutoptext">Mouse navigates the menu. &lt;Click&gt; selects subpages. Highlighted letters are the first letters of each word.</div>
-                <div class="menuoptions">
-                    <div class="menutopborder"></div>
-                    <div class="menubottomborder"></div>
+        <header>Blu -- ncurses-like CSS UI library</header>
+        <div class="dialog">
+            <div class="dialog-frame">
+                <div class="dialog-header"><span>Main Menu</span></div>
+                <div class="dialog-text">Mouse navigates the menu. &lt;Click&gt; selects subpages. Highlighted letters are the first letters of each word.</div>
+                <div class="dialog-options">
                     <ul>
-                        <li><a class="checked" href="#"><span>S</span>horten a URL (EXPERIMENTAL)</a></li>
-                        <li><a href="#"><span>U</span>pload a file (EXPERIMENTAL)</a></li>
-                        <li><a href="#"><span>P</span>astebin text (EXPERIMENTAL)</a></li>
+                        <li><a class="checked" href="#">Shorten a URL (EXPERIMENTAL)</a></li>
+                        <li><a href="#">Upload a file (EXPERIMENTAL)</a></li>
+                        <li><a href="#">Pastebin text (EXPERIMENTAL)</a></li>
                     </ul>
                 </div>
-                <div class="menubuttons">
-                    <div class="menutopborder"></div>
-                    <a href="#"><span>S</span>elect</a>
-                    <a href="#"><span>E</span>xit</a>
-                    <a href="#"><span>H</span>elp</a>
+                <div class="dialog-buttons">
+                    <a href="#">Select</a>
+                    <a href="#">Exit</a>
+                    <a href="#">Help</a>
                 </div>
             </div>
         </div>
