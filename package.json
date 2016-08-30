@@ -1,0 +1,26 @@
+{
+  "name": "blu",
+  "version": "0.0.1",
+  "description": "ncurses-like CSS UI library",
+  "main": "dist/blu.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Borderliner/Blu.git"
+  },
+  "keywords": [
+    "ncurses",
+    "CSS",
+    "UI",
+    "Blu",
+    "Blue"
+  ],
+  "author": "Mohammad reza Hajianpour",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Borderliner/Blu/issues"
+  },
+  "homepage": "http://blu.borderliner.ir"
+}
