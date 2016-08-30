@@ -1,5 +1,5 @@
 {
-  "name": "blu",
+  "name": "blu-css",
   "version": "0.0.1",
   "description": "ncurses-like CSS UI library",
   "main": "dist/blu.min.js",
