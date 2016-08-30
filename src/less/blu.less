@@ -1,164 +1,146 @@
+@background-color: @blue;
+@header-text-color : #54fefe;
+// Colors Definition
+@black: #000;
+@white: #fff;
+@blue: #00f;
+@light-purple: #725dfc;
+
 body {
-    background: #00f;
-    font-family: 'Courier New', Courier, monospace;
+  background: @background-color;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-div.mainheader {
-    color: #54fefe;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #54fefe;
-    text-transform: uppercase;
+header, div.header {
+  color: @header-text-color;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid @header-text-color;
+  text-transform: uppercase;
 }
 
-div.menudialog {
-    position: relative;
-    width: 480px;
-    margin: auto;
-    background: #ccc;
-    padding: 10px 4px 8px 4px;
-    box-shadow: 16px 16px 0px 0px #000;
+#default-dialog-color() {
+  color: @white;
+  background-color: @blue;
 }
 
-div.menudialog div.menuouter div.menuheader {
-    position: relative;
-    top: -25px;
-    height: 0;
-    text-align: center;
-}
+.dialog {
+  position: relative;
+  width: 480px;
+  margin: auto;
+  background: #ccc;
+  padding: 10px 4px 8px 4px;
+  box-shadow: 16px 16px 0px 0px black;
 
-div.menudialog div.menuouter div.menuheader span {
-    padding-right: 5px;
-    padding-left: 5px;
-    background-color: #ccc;
-    color: #725dfc;
-    text-transform: uppercase;
-}
-
-div.menudialog div.menuouter div.menutoptext {
-    margin-top: -7px;
-    margin-bottom: 4px;
-}
-
-div.menudialog div.menuouter {
+  .dialog-frame {
     position: relative;
     padding: 15px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #000;
+    border-top: 1px solid @white;
+    border-bottom: 1px solid @black;
+    border-left: 1px solid @white;
+    border-right: 1px solid @black;
+
+    .dialog-header {
+      position: relative;
+      top: -25px;
+      height: 0;
+      text-align: center;
+
+      span {
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: #ccc;
+        color: #725dfc;
+        text-transform: uppercase;
+      }
+    }
+
+    .dialog-text {
+      margin-top: -7px;
+      margin-bottom: 4px;
+    }
+
+    .dialog-options {
+      position: relative;
+      padding: 0;
+      border-top: 1px solid @black;
+      border-bottom: 1px solid @white;
+      border-left: 1px solid @black;
+      border-right: 1px solid @white;
+
+      ul {
+        list-style: none;
+        padding-left: 30px;
+        padding-right: 4px;
+
+        li a {
+          height: 1.2em;
+          padding: 3px 2px 1px 2px;
+          overflow: hidden;
+          text-decoration: none;
+          color: #000;
+
+          &:before {
+            content: "[\0000a0]\0000a0";
+            display: inline;
+          }
+
+          &.checked:before {
+            content: "[x]\0000a0";
+            display: inline;
+          }
+
+          &:after {
+            content: "\0000a0--->";
+            display: inline;
+          }
+
+          &:hover { #default-dialog-color }
+          &:focus { #default-dialog-color }
+        }
+      }
+
+      a:hover,
+      a:focus { #default-dialog-color }
+    }
+
+    div.dialog-buttons {
+      position: relative;
+      width: 100%;
+      margin: 15px 0 -7px -15px;
+      padding-top: 10px;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-top: 1px solid #fff;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 2px;
+        text-decoration: none;
+        color: #696969;
+
+        &:before,
+        &:after {
+          display: inline;
+          color: @black;
+        }
+
+        &:hover, &:focus {
+          background-color: @blue;
+          color: @white;
+        }
+
+        &:hover:before,
+        &:hover:after,
+        &:focus:before,
+        &:focus:after { color: inherit; }
+
+        &:before { content: "\003c\0000a0"; }
+        &:after { content: "\0000a0\003e"; }
+      }
+    }
+  }
 }
-
-div.menudialog div.menuouter div.menutopborder,
-div.menudialog div.menuouter div.menubottomborder {
-    position: absolute;
-    border: none;
-    width: 5px;
-    height: 1px;
-}
-
-div.menudialog div.menuouter div.menutopborder {
-    top: -1px;
-    right: -1px;
-    background-color: #000;
-}
-
-div.menudialog div.menuouter div.menubottomborder {
-    bottom: -1px;
-    left: -1px;
-    background-color: #fff;
-}
-
-div.menudialog div.menuouter div.menuoptions {
-    position: relative;
-    padding: 0;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #000;
-    border-right: 1px solid #fff;
-}
-
-div.menudialog div.menuouter div.menuoptions div.menutopborder { background-color: #fff; }
-div.menudialog div.menuouter div.menuoptions div.menubottomborder { background-color: #000; }
-
-div.menudialog div.menuouter div.menuoptions ul {
-    list-style: none;
-    padding-left: 30px;
-    padding-right: 4px;
-}
-
-div.menudialog div.menuouter div.menuoptions ul li a {
-    height: 1.2em;
-    padding: 3px 2px 1px 2px;
-    overflow: hidden;
-    text-decoration: none;
-    color: #000;
-}
-
-div.menudialog div.menuouter div.menuoptions ul li a:hover,
-div.menudialog div.menuouter div.menubuttons a:hover,
-div.menudialog div.menuouter div.menuoptions ul li a:focus,
-div.menudialog div.menuouter div.menubuttons a:focus {
-    color: #fff;
-    background-color: #00f;
-}
-
-div.menudialog div.menuouter div.menuoptions ul li a:before {
-    content: "[\0000a0]\0000a0";
-    display: inline;
-}
-
-div.menudialog div.menuouter div.menuoptions ul li a.checked:before {
-    content: "[x]\0000a0";
-    display: inline;
-}
-
-div.menudialog div.menuouter div.menuoptions ul li a:after {
-    content: "\0000a0--->";
-    display: inline;
-}
-
-div.menudialog div.menuouter div.menuoptions ul li a span,
-div.menudialog div.menuouter div.menubuttons a span { color: #725dfc; }
-
-div.menudialog div.menuouter div.menuoptions ul li a:hover span,
-div.menudialog div.menuouter div.menubuttons a:hover span,
-div.menudialog div.menuouter div.menuoptions ul li a:focus span,
-div.menudialog div.menuouter div.menubuttons a:focus span { color: #f7fb54; }
-
-div.menudialog div.menuouter div.menubuttons {
-    position: relative;
-    width: 100%;
-    margin: 15px 0 -7px -15px;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-top: 1px solid #fff;
-    text-align: center;
-}
-
-div.menudialog div.menuouter div.menubuttons a {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 2px;
-    text-decoration: none;
-    color: #696969;
-}
-
-div.menudialog div.menuouter div.menubuttons a:before,
-div.menudialog div.menuouter div.menubuttons a:after {
-    display: inline;
-    color: #000;
-}
-
-div.menudialog div.menuouter div.menubuttons a:hover:before,
-div.menudialog div.menuouter div.menubuttons a:hover:after,
-div.menudialog div.menuouter div.menubuttons a:focus:before,
-div.menudialog div.menuouter div.menubuttons a:focus:after { color: inherit; }
-
-div.menudialog div.menuouter div.menubuttons a:before { content: "\003c\0000a0"; }
-div.menudialog div.menuouter div.menubuttons a:after { content: "\0000a0\003e"; }
-
-div.menudialog div.menuouter div.menubuttons div.menutopborder { background-color: #000; }
-
