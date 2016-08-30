@@ -37,3 +37,10 @@ gulp.task('default', [
 ], function () {
   return gutil.log('\t', gutil.colors.green('Compiled successfully!'))
 })
+
+gulp.task('watch', function () {
+  gulp.watch([
+    'src/js/**/*.js',
+    'src/less/**/*.less'
+  ], ['default'])
+})
